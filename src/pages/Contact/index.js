@@ -62,10 +62,10 @@ export default function Contact() {
 
               <div>
                 <Select name="" id="">
-                  <option value="">N° de funcionários</option>
+                  <option value="">N° de funcionários *</option>
                 </Select>
                 <Select name="" id="">
-                  <option value="">N° de funcionários</option>
+                  <option value="">Cargos *</option>
                 </Select>
               </div>
               <ButtonSubmit type="submit">Enviar</ButtonSubmit>

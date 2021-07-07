@@ -14,6 +14,7 @@ export default function Routes() {
     <Router>
       <Switch>
         <Route path="/" exact={true} component={Contact} />
+        <Route path="/contact" exact={true} component={Contact} />
         <Route path="/quotation" exact={true} component={Quotation} />
         <Redirect to="/" />
       </Switch>

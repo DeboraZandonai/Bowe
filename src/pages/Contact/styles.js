@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import imagem from "../../images/header.jpg";
+import imagem from "../../images/teste.jpg";
 
 export const Container = styled.div`
   background: transparent url(${imagem}) 0% 0% no-repeat;
+  background-size: cover;
   height: 100vh;
   flex: 1;
   display: flex;
@@ -17,6 +18,7 @@ export const ContainerMain = styled.div`
 
 export const ContainerText = styled.div`
   display: flex;
+  margin-right: 6rem;
   flex-direction: column;
 `;
 
@@ -62,6 +64,7 @@ export const Form = styled.form`
   p {
     color: #000000;
     font-size: 12px;
+    max-width: 92%;
   }
 `;
 
@@ -85,6 +88,31 @@ export const Input = styled.input`
   border-radius: 3px;
   color: #5f5f5f;
   margin: 10px;
+
+  /* ::-webkit-input-placeholder {
+    color: #de241b;
+  }
+
+  :-moz-placeholder {
+    color: #de241b;
+  }
+
+  ::-moz-placeholder {
+    color: #de241b;
+  }
+
+  :-ms-input-placeholder {
+    color: #de241b;
+  }
+  input::placeholder {
+    color: #de241b;
+  } */
+`;
+
+export const Label = styled.label`
+  span {
+    color: #de241b;
+  }
 `;
 
 export const Select = styled.select`
@@ -94,6 +122,10 @@ export const Select = styled.select`
   border-radius: 3px;
   margin: 10px;
   color: #5f5f5f;
+
+  strong {
+    color: #de241b;
+  }
 `;
 
 export const ButtonSubmit = styled.button`
@@ -104,4 +136,7 @@ export const ButtonSubmit = styled.button`
   border-radius: 3px;
   font-size: 20px;
   margin: 1rem auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
 `;
