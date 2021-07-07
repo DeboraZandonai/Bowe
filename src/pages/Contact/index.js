@@ -63,12 +63,16 @@ export default function Contact() {
               <div>
                 <Select name="" id="">
                   <option value="">N° de funcionários *</option>
+                  <option value="">N° de funcionários 1</option>
+                  <option value="">N° de funcionários 2</option>
                 </Select>
                 <Select name="" id="">
                   <option value="">Cargos *</option>
+                  <option value="">Cargo 1</option>
+                  <option value="">Cargo 2</option>
                 </Select>
               </div>
-              <ButtonSubmit type="submit">Enviar</ButtonSubmit>
+              <ButtonSubmit type="submit">ENVIAR</ButtonSubmit>
               <p>
                 *Estes dados podem ser armazenados em um servidor internacional
                 pela Lenovo ou em nome da Lenovo, permitindo ser revogada a

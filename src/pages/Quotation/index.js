@@ -54,18 +54,26 @@ export default function Quotation() {
               <div>
                 <Select name="" id="" required>
                   <option value="">Categoria de produto *</option>
+                  <option value="">Categoria de produto 1</option>
+                  <option value="">Categoria de produto 2</option>
                 </Select>
                 <Select name="" id="" required>
                   <option value="">Empresa *</option>
+                  <option value="">Empresa 1</option>
+                  <option value="">Empresa 2</option>
                 </Select>
               </div>
 
               <div>
                 <Select name="" id="" required>
                   <option value="">Motivo de contato*</option>
+                  <option value="">Motivo de contato 1</option>
+                  <option value="">Motivo de contato 2</option>
                 </Select>
                 <Select name="" id="" required>
                   <option value="">Estado *</option>
+                  <option value="">Estado 1</option>
+                  <option value="">Estado 2</option>
                 </Select>
               </div>
 
