@@ -57,7 +57,7 @@ export default function Contact() {
 
               <div>
                 <Input placeholder="E-mail *" type="email" required />
-                <Input placeholder="Telefone  *" type="tel" required />
+                <Input placeholder="Telefone *" type="tel" required />
               </div>
 
               <div>

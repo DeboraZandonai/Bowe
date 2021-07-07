@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imagem from "../../images/teste.jpg";
+import imagem from "../../images/background.png";
 
 export const Container = styled.div`
   background: transparent url(${imagem}) 0% 0% no-repeat;
@@ -9,17 +9,35 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
 `;
 
 export const ContainerMain = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 90%;
+  }
 `;
 
 export const ContainerText = styled.div`
   display: flex;
   margin-right: 6rem;
   flex-direction: column;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const HeadText = styled.h3`
@@ -51,6 +69,11 @@ export const ContainerForm = styled.div`
   padding: 2rem;
   flex-direction: column;
   border-radius: 3px;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 90%;
+  }
 `;
 
 export const ContainerCheckbox = styled.div`
@@ -75,6 +98,14 @@ export const Form = styled.form`
     font-size: 12px;
     max-width: 92%;
   }
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const FormSubTitle = styled.h2`
@@ -85,23 +116,10 @@ export const FormSubTitle = styled.h2`
 export const FormParagraph = styled.p`
   color: #5f5f5f;
   font-weight: normal;
+  font-size: 18px !important;
+
   strong {
     color: #000;
-  }
-`;
-
-export const Input = styled.input`
-  height: 40px;
-  width: 240px;
-  border: 2px solid #c7c7c7;
-  border-radius: 3px;
-  color: #5f5f5f;
-  margin: 10px;
-`;
-
-export const Label = styled.label`
-  span {
-    color: #de241b;
   }
 `;
 
@@ -113,8 +131,9 @@ export const Select = styled.select`
   margin: 10px;
   color: #5f5f5f;
 
-  strong {
-    color: #de241b;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 42%;
   }
 `;
 
@@ -127,6 +146,12 @@ export const ButtonSubmit = styled.button`
   font-size: 20px;
   margin: 1rem auto;
   border: none;
+  font-weight: bold;
   outline: none;
   cursor: pointer;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 90%;
+  }
 `;
